@@ -4,7 +4,9 @@
   "description": "A helper library for examining and manually testing Cloud Elements native elements json files.",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "lukevance",
   "license": "ISC",
@@ -14,6 +16,8 @@
     "inquirer": "^3.0.5",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
-    "ntp2": "^1.0.1"
-  }
+    "ntp2": "^1.0.1",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
